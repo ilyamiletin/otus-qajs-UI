@@ -1,0 +1,17 @@
+{
+  "name": "playwright-ui-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome:desktop": "npx playwright test --project chromium",
+    "test:chrome:mobile": "npx playwright test --project chromium-mobile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.28"
+  }
+}
