@@ -31,7 +31,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. 
        (Базовый URL-адрес для использования в действиях типа await page.goto)*/
-    baseURL: 'https://demoqa.com',
+    //baseURL: 'https://demoqa.com',
     //baseURL: 'https://itusluga.ru',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer 
