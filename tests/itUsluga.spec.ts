@@ -35,5 +35,5 @@ test.describe('Функциональное тестирвоание', () => {
         await page.getByRole('link', { name: 'Онлайн-кассы ' }).hover();
         const list = page.locator('[class="dropdown-toggle"]');
         await expect(list).toHaveCount(4);
-    })
+    });
 })
