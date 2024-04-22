@@ -28,11 +28,15 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. 
      (Общие настройки для всех приведенных ниже проектов. Видеть)*/
+  expect: {
+      timeout: 10 * 7000,
+    },
+  timeout: 10 * 7000,
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. 
        (Базовый URL-адрес для использования в действиях типа await page.goto)*/
     //baseURL: 'https://demoqa.com',
-    //baseURL: 'https://itusluga.ru',
+   baseURL: 'https://itsm-t-app05.it.sberbank-service.ru',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer 
        (Соберите трассировку при повторной попытке неудачного теста. Видеть)*/
@@ -45,7 +49,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] ,
-      headless: true},
+      headless: false},
     },
 
    //  {
